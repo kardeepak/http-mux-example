@@ -8,8 +8,8 @@ import (
 	"github.com/gorilla/mux"
 	log "github.com/sirupsen/logrus"
 
-	"appdynamics.com/golang/http-mux/books/entities"
-	"appdynamics.com/golang/http-mux/books/services"
+	"github.com/kardeepak/http-mux-example/books/entities"
+	"github.com/kardeepak/http-mux-example/books/services"
 )
 
 type BookHandler struct {

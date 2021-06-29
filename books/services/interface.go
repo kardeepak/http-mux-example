@@ -1,7 +1,7 @@
 package services
 
 import (
-	"appdynamics.com/golang/http-mux/books/entities"
+	"github.com/kardeepak/http-mux-example/books/entities"
 )
 
 type BookService interface {

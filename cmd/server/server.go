@@ -6,9 +6,9 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/urfave/negroni"
 
-	"appdynamics.com/golang/http-mux/books/handlers"
-	"appdynamics.com/golang/http-mux/books/repository"
-	"appdynamics.com/golang/http-mux/books/services"
+	"github.com/kardeepak/http-mux-example/books/handlers"
+	"github.com/kardeepak/http-mux-example/books/repository"
+	"github.com/kardeepak/http-mux-example/books/services"
 )
 
 func main() {

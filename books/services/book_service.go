@@ -3,9 +3,9 @@ package services
 import (
 	"errors"
 
-	"appdynamics.com/golang/http-mux/books/entities"
-	"appdynamics.com/golang/http-mux/books/repository"
 	"github.com/go-playground/validator"
+	"github.com/kardeepak/http-mux-example/books/entities"
+	"github.com/kardeepak/http-mux-example/books/repository"
 )
 
 type bookServiceImpl struct {

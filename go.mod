@@ -1,4 +1,4 @@
-module appdynamics.com/golang/http-mux
+module github.com/kardeepak/http-mux-example
 
 go 1.16
 

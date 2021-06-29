@@ -1,6 +1,6 @@
 package repository
 
-import "appdynamics.com/golang/http-mux/books/entities"
+import "github.com/kardeepak/http-mux-example/books/entities"
 
 type BookRepository interface {
 	List() []entities.Book

@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"appdynamics.com/golang/http-mux/books/services"
 	"github.com/gorilla/mux"
+	"github.com/kardeepak/http-mux-example/books/services"
 )
 
 func NewBookHandler(svc services.BookService) BookHandler {

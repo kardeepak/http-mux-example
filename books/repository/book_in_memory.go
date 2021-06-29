@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"appdynamics.com/golang/http-mux/books/entities"
+	"github.com/kardeepak/http-mux-example/books/entities"
 )
 
 type inMemoryBookRepository struct {
