@@ -26,7 +26,7 @@ func (svc bookServiceImpl) Get(ID int) (entities.Book, error) {
 
 func (svc bookServiceImpl) Create(book entities.Book) (entities.Book, error) {
 	if book.ID != 0 {
-		return entities.Book{}, errors.New("New Book must ID as zero. ")
+		return entities.Book{}, errors.New("New Book ID must be zero.")
 	}
 	if err := svc.validate.Struct(book); err != nil {
 		return entities.Book{}, err
@@ -35,6 +35,9 @@ func (svc bookServiceImpl) Create(book entities.Book) (entities.Book, error) {
 }
 
 func (svc bookServiceImpl) Update(book entities.Book) (entities.Book, error) {
+	if err := svc.validate.Struct(book); err != nil {
+		return entities.Book{}, err
+	}
 	return svc.repository.Update(book)
 }
 
